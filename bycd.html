@@ -20,6 +20,38 @@
 
       gtag('config', 'G-WX1GY7GEWF');
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -27,7 +59,23 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <h1>by©D Bu bir test sayfasıdır.</h1>
-    <p>Bu sayfa Google Tag Manager ile izlenmektedir.</p>
+    <h1>by©D - Etkileşimli Test Sayfası</h1>
+    <p>Bu sayfa, butonlara tıklayarak yeni işlemler başlatmanızı sağlar.</p>
+
+    <div class="button-container">
+        <button class="button" onclick="startProcess('Birinci İşlem')">Birinci İşlem</button>
+        <button class="button" onclick="startProcess('İkinci İşlem')">İkinci İşlem</button>
+        <button class="button" onclick="startProcess('Üçüncü İşlem')">Üçüncü İşlem</button>
+        <button class="button" onclick="startProcess('Dördüncü İşlem')">Dördüncü İşlem</button>
+    </div>
+
+    <script>
+        function startProcess(action) {
+            console.log(action + " başlatıldı.");
+            alert(action + " seçildi!");
+            // Burada seçime göre yeni işlemler başlatılabilir.
+            // Örneğin, sunucuya veri gönderme veya yeni sayfa yönlendirme gibi işlemler yapılabilir.
+        }
+    </script>
 </body>
 </html>
